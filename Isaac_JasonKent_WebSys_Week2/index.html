@@ -1,59 +1,242 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            All About Isaac
-        </title>
-    </head>
-<body bgcolor="lightblue">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All About Isaac</title>
 
-<h1>Jason Kent S. Isaac</h1>
-<h2>BSIT - MWA INF:243</h2>
+    <style>
+        /* Reset & base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            line-height: 1.6;
+        }
+
+        /* Container */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Header */
+        header {
+            background: #f9cbcb;
+            color: rgb(0, 0, 0);
+            padding: 20px 0;
+            text-align: center
+            ;
+        }
+
+        /* Navigation */
+        nav {
+            background: #a8b9f1;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 18px;          /* Adds space inside */
+            background: #6f86d6;        /* Button color */
+            border-radius: 50px;        /* Makes it pill-shaped */
+            display: inline-block;      /* Ensures proper shape */
+            transition: 0.3s;           /* Smooth hover */
+        }
+
+        nav ul li a:hover {
+            color: #fc4980;
+        }
+
+        /* Sections */
+        section {
+            background: #fceaea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Images */
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 15px auto;
+            border-radius: 10px;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background: #a8b9f1;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: lightblue;
+            text-decoration: none;
+        }
+
+        nav, section, footer, img {
+            border: 2px solid black;
+      }
+
+            /* Grid layout */
+      .websites-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+          gap: 20px;
+          margin-top: 15px;
+      }
+
+      /* Card style */
+      .site-card {
+          background: #f0f4ff;
+          border: 2px solid black;
+          border-radius: 15px;
+          text-align: center;
+          padding: 15px;
+          text-decoration: none;
+          color: black;
+          transition: 0.3s;
+      }
+
+      /* Logo */
+      .site-card img {
+          width: 60px;
+          height: 60px;
+          object-fit: contain;
+          margin-bottom: 10px;
+          border: none;
+      }
+
+      /* Hover effect */
+      .site-card:hover {
+          background: #fc4980;
+          color: #fceaea;
+          transform: translateY(-5px);
+      }
+
+            /* First two images smaller */
+      section img:nth-of-type(1),
+      section img:nth-of-type(2) {
+          width: 600px;   /* adjust size as you like */
+      }
+      
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Jason Kent S. Isaac</h1>
+    <h2>BSIT - MWA INF:243</h2>
+</header>
 
 <nav>
   <ul>
     <li><a href="#aboutMe">About Me</a></li>
     <li><a href="#hobbies">Hobbies</a></li>
     <li><a href="#websites">Favorite Websites</a></li>
-    <li><a href="#contact">Contact Me!</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
-<h3 id="aboutMe">About me:</h3>
-<p>Hello! You can call me Jake if you want. I really like networking and that's why I chose IT as my major.</p>
+<div class="container">
 
-<p>I spend most of my time on the internet. It's where I found most of what I care about nowadays, especially my friends!</p>
+<section id="aboutMe">
+    <h3>About Me</h3>
+    <p>Hello! You can call me Jake if you want. I really like networking and that's why I chose IT as my major.</p>
+    <p>I spend most of my time on the internet. It's where I found most of what I care about nowadays, especially my friends!</p>
+    <p>I care deeply about my friends, whether it is real life or online. Without them, I wouldn't be the person I am today.</p>
+    <p>Hoping for good life in the next years of my whole life!</p>
 
-<p>I care deeply about my friends, whether it is real life or online. Without them, I wouldn't be the person I am today.</p>
+    <img src="assets/best day ever.jpg" alt="Friends">
+    <p><center>You can see me at the very bottom right corner, alongside my online friends</center></p>
+</section>
 
-<p>Hoping for good life in the next years of my whole life!</p>
+<section id="hobbies">
+    <h3>My Favorite Hobbies</h3>
+    <ul>
+        <li>Arcade Games</li>
+        <li>Listening to Music</li>
+        <li>Reading</li>
+        <li>Digital Art</li>
+        <li>Anime</li>
+    </ul>
 
-<img src="assets\best day ever.jpg" alt="Friends" style="width:870;height:570;">
+    <img src="assets/yancy.png" alt="My artwork of Yancy from Pokemon">
+    <p><center>I draw as a hobby. Here is one of my artworks.</center></p>
+</section>
 
-<h3 id="hobbies">My favorite hobbies:</h3>
-<ul>
-  <li>Arcade Games</li>
-  <li>Listening to Music</li>
-  <li>Reading</li>
-  <li>Digital Art</li>
-  <li>Anime</li>
-</ul>
+<section id="websites">
+    <h3>My Favorite Websites</h3>
 
-<img src="assets\yancy.png" alt="My artwork of Yancy from Pokemon" style="width:576px;height:432px;">
-<p>I draw as a hobby. Here is one of my artworks</p>
+    <div class="websites-grid">
 
-<h3 id="websites">My Favorite Websites:</h3>
-<ol type="1">
-  <li><a href="https://www.youtube.com/">YouTube</a> - News, Education, Entertainment, everything you could think of is here!</li>
-  <li><a href="https://x.com/">Twitter</a> - People can get VERY vocal here to say the least, and that's what keeps me coming back.</li>
-  <li><a href="https://discord.com/">Discord</a> - I met my now closest friends here, as well as lots of heartbreaks unfortunately.</li>
-  <li><a href="https://www.reddit.com/">Reddit</a> - Forums filled with all kinds of communities, ready to answer most questions you could ask them!</li>
-  <li><a href="https://www.pixiv.net/en/">Pixiv</a> - Art website filled with talented artists from Japan and other places! I upload most of my works here as well!</li>
-</ol>
+        <a href="https://www.youtube.com/" class="site-card" target="_blank">
+            <img src="assets/youtube.webp" alt="YouTube">
+            <p><b>YouTube</b></p>
+            <p>News, education, entertainment, everything!</p>
+        </a>
 
-<h4 id="contact">Contact Me:</h4>
+        <a href="https://x.com/" class="site-card" target="_blank">
+            <img src="assets/twitter.png" alt="Twitter">
+            <p><b>Twitter</b></p>
+            <p>Very "vocal" community.</p>
+        </a>
 
-<footer>
+        <a href="https://discord.com/" class="site-card" target="_blank">
+            <img src="assets\discord.png" alt="Discord">
+            <p><b>Discord</b></p>
+            Where I met my closest online friends.
+        </a>
+
+        <a href="https://www.reddit.com/" class="site-card" target="_blank">
+            <img src="assets/reddit.png" alt="Reddit">
+            <p><b>Reddit</b></p>
+            <p>Communities for everything and everyone.</p>
+
+        </a>
+
+        <a href="https://www.pixiv.net/en/" class="site-card" target="_blank">
+            <img src="assets/pixiv.jpeg" alt="Pixiv">
+            <p><b>Pixiv</b></p>
+            <p>Main art platform I use</p>
+        </a>
+
+    </div>
+</section>
+
+</div>
+
+<footer id="contact">
     <p>Email: <a href="mailto:isaacjs@students.national-u.edu.ph">isaacjs@students.national-u.edu.ph</a></p>
     <p>Phone: 0123456789</p>
 </footer>
